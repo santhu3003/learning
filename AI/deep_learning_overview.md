@@ -38,7 +38,7 @@ A basic neural network contains:
 **Diagram: Basic Neural Network Structure**
 
 ```mermaid
-graph LR
+flowchart LR
     A[Input Layer] --> B[Hidden Layer 1]
     B --> C[Hidden Layer 2]
     C --> D[Output Layer]
@@ -74,12 +74,12 @@ output = activation(W1*x1 + W2*x2 + ... + b)
 
 ```mermaid
 flowchart LR
-    X1[x1] --> SUM
+    X1[x1] --> SUM((Σ))
     X2[x2] --> SUM
     W1[w1] -.-> SUM
     W2[w2] -.-> SUM
     B[bias] --> SUM
-    SUM((Σ)) --> ACT[Activation<br>Function]
+    SUM --> ACT[Activation Function]
     ACT --> OUT[Output]
 ```
 
@@ -165,14 +165,15 @@ This cycle repeats many times during training.
   - Helps networks learn faster
   - Reduces vanishing gradient problem
 
-**Graph:**
+**Diagram: ReLU Activation**
 
 ```mermaid
-%% ReLU graph (conceptual)
-graph LR
-    A((x < 0)) -->|0| B[Output]
-    C((x >= 0)) -->|x| B
+flowchart TD
+    X[Input x] -->|x < 0| Z[Output: 0]
+    X -->|x >= 0| Y[Output: x]
 ```
+
+---
 
 ### **Sigmoid**
 
@@ -182,12 +183,12 @@ graph LR
   - Good for binary classification (probabilities)
   - Smooth gradient
 
-**Graph:**
+**Diagram: Sigmoid Activation**
 
 ```mermaid
-%% Sigmoid graph (conceptual)
-graph LR
-    X[Input x] --> S[Sigmoid Function] --> Y[Output (0 to 1)]
+flowchart TD
+    X[Input x] --> S[Sigmoid Function: 1/(1+exp(-x))]
+    S --> Y[Output: 0 to 1]
 ```
 
 ---
