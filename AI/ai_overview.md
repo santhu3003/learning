@@ -72,3 +72,33 @@ Machine Learning is generally divided into three major types:
 - **Policy Gradient Methods:** Optimizes behavior directly (robotics control, autonomous driving, advanced game AI)
 
 ---
+
+## 🛠️ Tools and Technologies Used in Machine Learning
+
+To work with Machine Learning, you typically use a combination of programming languages, libraries, and software tools. Here is a beginner‑friendly list of the most important ones:
+
+- **Python:** Most popular language for ML (easy syntax, rich libraries)
+- **R:** Used for statistics and data analysis
+- **Jupyter Notebook:** Interactive coding and visualization
+- **NumPy, Pandas:** Data manipulation and analysis
+- **scikit-learn:** Standard ML algorithms and utilities
+- **TensorFlow, PyTorch:** Deep learning frameworks
+- **Keras:** High-level neural network API (runs on TensorFlow)
+- **Matplotlib, Seaborn:** Data visualization
+
+---
+
+## 📈 Summary Table
+
+| Type                  | Data Used   | Example Algorithms         | Typical Use Cases                  |
+|-----------------------|-------------|---------------------------|------------------------------------|
+| Supervised Learning   | Labeled     | Linear/Logistic Regression, Decision Trees, SVM, kNN, Random Forest | Spam detection, price prediction   |
+| Unsupervised Learning | Unlabeled   | k-Means, Hierarchical Clustering, PCA | Customer segmentation, compression |
+| Reinforcement Learning| Rewards     | Q-Learning, DQN, Policy Gradients    | Robotics, game AI, self-driving    |
+
+---
+
+*Explore these concepts further to build a strong foundation in AI and ML!*
+
+
+> **Note:** Deep Learning is a subset of Machine Learning. To learn Deep Learning effectively, you should first understand the basics of Machine Learning.
