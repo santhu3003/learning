@@ -183,15 +183,6 @@ flowchart TD
   - Good for binary classification (probabilities)
   - Smooth gradient
 
-**Diagram: Sigmoid Activation**
-
-```mermaid
-flowchart TD
-    X[Input x] --> S[Sigmoid Function: 1/(1+exp(-x))]
-    S --> Y[Output (0 to 1)]
-```
----
-
 ## 🛠️ Tools & Technologies in Deep Learning
 
 **Frameworks:**
