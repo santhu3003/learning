@@ -1,0 +1,176 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Jake Gutierrez (adapted + customized for Santhosh Konda)
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[margin=1.2in,headheight=40pt,headsep=15pt,footskip=30pt]{geometry}
+\usepackage{lastpage}
+\usepackage[sfdefault]{sourcesanspro}
+\renewcommand{\familydefault}{\sfdefault}
+\input{glyphtounicode}
+
+%---------- BULLET STYLE ----------
+\renewcommand\labelitemi{\textbullet}
+
+%---------- PAGE STYLE ----------
+\pagestyle{fancy}
+\fancyhf{}
+
+\definecolor{linkblue}{RGB}{30,90,200}
+
+% Header
+\fancyhead[C]{
+  \begin{tabular}{c}
+    \textbf{\Large Santhosh K} \\
+    \footnotesize
+    \textcolor{linkblue}{Ph: +1-810-221-9621} $|$
+    \href{mailto:kondasanthosh04@gmail.com}{\textcolor{linkblue}{kondasanthosh04@gmail.com}} $|$
+    \href{https://linkedin.com/in/skonda2}{\textcolor{linkblue}{linkedin.com/in/skonda2}}
+  \end{tabular}
+}
+
+% Footer
+\fancyfoot[C]{\footnotesize Page \thepage\ of \pageref{LastPage}}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\raggedbottom
+\raggedright
+
+% Section Title Style
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\bfseries\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{\item #1}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \vspace{-4pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}[leftmargin=0.2in,label=\textbullet,itemsep=2pt,topsep=2pt]%
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%-----------Professional Summary-----------
+\section{Professional Summary}
+\resumeSubHeadingListStart
+  \resumeItem{
+Application Engineer with 8+ years of experience delivering scalable, cloud-native solutions using \textbf{Java}, \textbf{Spring Boot}, \textbf{GoLang}, and \textbf{microservices}. Strong background in high-performance \textbf{REST API} development, event-driven architecture, and secure service-to-service communication using \textbf{JWT}. Skilled in \textbf{Kubernetes}, \textbf{OpenShift}, \textbf{AWS}, and CI/CD automation, with hands-on expertise in \textbf{Kafka}, \textbf{SQS}, SQL/NoSQL databases, and distributed system performance optimization. Proven ability to modernize legacy platforms, improve service reliability, and collaborate across teams to deliver robust engineering solutions.
+}
+\resumeSubHeadingListEnd
+
+%-----------Experience-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% Discover
+\resumeSubheading
+  {Application Engineer at Discover Financial Services}{May 2020 -- Present}
+  {Riverwoods, IL}{}
+\resumeItemListStart
+  \resumeItem{Designed end-to-end service architecture and developed technical diagrams using \textbf{Mermaid} and \textbf{Lucidchart}.}
+  \resumeItem{Developed high-performance \textbf{RESTful APIs} using \textbf{Spring Boot} and \textbf{GoLang}.}
+  \resumeItem{Implemented \textbf{JWT}-based authentication, token validation, and standardized security filters across microservices.}
+  \resumeItem{Built and integrated microservices using \textbf{REST}, \textbf{Kafka}, and internal API gateways.}
+  \resumeItem{Developed thread-safe Java modules using concurrency utilities, executor pools, and asynchronous processing.}
+  \resumeItem{Implemented GoLang services using goroutines, channels, and context-driven cancellation patterns.}
+  \resumeItem{Optimized high-volume API paths by improving SQL queries and caching strategy, resulting in faster response times.}
+  \resumeItem{Deployed services on \textbf{Kubernetes} (Deployments, Services, ConfigMaps, Secrets) with HPA and rolling updates.}
+  \resumeItem{Built and maintained reusable \textbf{Helm} charts to standardize deployments across teams.}
+  \resumeItem{Leveraged \textbf{AWS} services including Lambda, RDS (PostgreSQL), SQS, IAM, S3, and CloudWatch for distributed service management.}
+  \resumeItem{Led the migration of microservices from \textbf{PCF} to \textbf{OpenShift (OCP)} with zero-downtime deployment patterns.}
+  \resumeItem{Monitored and troubleshot systems using \textbf{AppDynamics}, \textbf{Kibana}, \textbf{Instana}, and \textbf{Datadog}.}
+\resumeItemListEnd
+
+% Iknowvate (FIX APPLIED HERE)
+\vspace{6pt}
+\pagebreak[2]
+
+% Iknowvate
+\resumeSubheading
+  {Software Engineer at Iknowvate Technologies Inc}{Sep 2019 -- May 2020}
+  {Taylor, MI}{}
+\resumeItemListStart
+  \resumeItem{Built secure microservices using \textbf{Spring Boot} and centralized configuration via Spring Config Server.}
+  \resumeItem{Developed SPA applications using \textbf{ReactJS}, \textbf{Redux}, and \textbf{React Router}.}
+  \resumeItem{Integrated REST APIs using Axios and developed reusable UI components.}
+  \resumeItem{Performed unit testing with \textbf{JUnit}, \textbf{Mockito}, and \textbf{PowerMock}.}
+  \resumeItem{Executed load/performance testing using \textbf{JMeter}.}
+  \resumeItem{Deployed applications to \textbf{PCF} using Jenkins and Concourse CI/CD pipelines.}
+\resumeItemListEnd
+
+% Capgemini
+\resumeSubheading
+  {Consultant at Capgemini America Inc}{Sep 2017 -- Sep 2019}
+  {Riverwoods, IL}{}
+\resumeItemListStart
+  \resumeItem{Developed secure and scalable applications using \textbf{Spring Boot}, \textbf{Spring MVC}, \textbf{Hibernate}, and \textbf{Spring Security}.}
+  \resumeItem{Built UI components using \textbf{HTML5}, \textbf{CSS3}, \textbf{JavaScript}, and \textbf{AngularJS}.}
+  \resumeItem{Implemented multithreaded Java modules for performance-critical workloads.}
+  \resumeItem{Created API documentation using \textbf{Swagger}.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Technical Skills-----------
+\section{Technical Skills}
+\textbf{Languages:} C, C++, Java, GoLang, JavaScript, SQL (PostgreSQL, MariaDB, Oracle) \\[3pt]
+\textbf{Frameworks:} Spring Boot, Spring MVC, Hibernate, ReactJS, AngularJS \\[3pt]
+\textbf{Cloud \& Container:} AWS, Kubernetes, Docker, OpenShift, PCF, GCP \\[3pt]
+\textbf{Dev Tools:} IntelliJ, VS Code, GitHub Copilot \\[3pt]
+\textbf{CI/CD:} Jenkins, GitHub, Maven, Gradle \\[3pt]
+\textbf{Monitoring:} AppDynamics, Instana, Datadog, Splunk \\[3pt]
+\textbf{Testing \& Quality:} JUnit, Mockito, SonarQube, Nexus IQ \\[3pt]
+\textbf{Artifact Management:} JFrog Artifactory, Nexus Repository
+
+%-----------Certifications-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+  \resumeItem{\href{https://www.credly.com/badges/f071ee8f-ae3d-4a8a-bd92-43799f946ca5/linked_in_profile}{\textcolor{linkblue}{AWS Certified Solutions Architect – Associate} (2024)}}
+  \resumeItem{\href{https://www.credly.com/badges/0c5b7b0a-8a45-4739-acb6-de6b87daa585/linked_in_profile}{\textcolor{linkblue}{Certified Kubernetes Application Developer (CKAD)} (2024)}}
+  \resumeItem{Oracle Certified Professional, Java SE 8 Developer (2018)}
+\resumeSubHeadingListEnd
+
+%-----------Education-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Michigan–Flint}{2015 -- 2017}
+    {Master of Science in Computer Science and Information Systems}{Flint, MI}
+
+  \vspace{2pt}
+
+  \resumeSubheading
+    {JNTUH University}{2011 -- 2015}
+    {Bachelor of Engineering in Computer Science and Engineering}{Hyderabad, Telangana}
+\resumeSubHeadingListEnd
+
+\end{document}
